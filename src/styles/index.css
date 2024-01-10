@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Narrow-Bold";
+  src: url("../../src/assets/fonts/ArchivoNarrow-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Narrow-Regular";
+  src: url("../../src/assets/fonts/ArchivoNarrow-Regular.ttf");
+}
+
+:root {
+  --color-primario: #2d536f;
+  --color-secundario: #88e1ec;
+  --fuente-bold: "Narrow-Bold";
+  --fuente-regular: "Narrow-Regular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: var(--fuente-regular);
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+a {
+  text-decoration: none;
+}
