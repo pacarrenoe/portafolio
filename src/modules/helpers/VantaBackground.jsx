@@ -8,8 +8,8 @@ const VantaBackground = () => {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 500.0,
-      minWidth: 500.0,
+      minHeight: 300.0,
+      minWidth: 300.0,
       scale: 1.0,
       scaleMobile: 1.0,
       color: 0x570710,
@@ -20,8 +20,14 @@ const VantaBackground = () => {
   }, []);
 
   return (
-    <div className="vanta">
-      <div id="vanta"></div>
+    <div className="vanta-container">
+      <div id="vanta" className="vanta-background">
+        <div className="vanta-blur"></div>
+      </div>
+      <div className="vanta-content">
+        <h1>¡Hola mundo! </h1>
+        <p>En este lugar, te quiero mostrar una parte de mí.</p>
+      </div>
     </div>
   );
 };

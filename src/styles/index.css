@@ -9,8 +9,6 @@
 }
 
 :root {
-  --color-primario: #2d536f;
-  --color-secundario: #88e1ec;
   --fuente-bold: "Narrow-Bold";
   --fuente-regular: "Narrow-Regular";
 }
@@ -32,8 +30,9 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 10px;
   font-family: var(--fuente-regular);
+  background-color: #000000;
 }
 
 p {
@@ -42,4 +41,58 @@ p {
 
 a {
   text-decoration: none;
+}
+
+/* Custom svg's */
+.custom__svg__linkedin {
+  max-width: 3rem;
+}
+.custom__svg__gmail {
+  max-width: 2.4rem;
+}
+
+/* Custom vanta */
+
+.vanta-container {
+  position: relative;
+}
+
+.vanta-content {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vanta-content h1 {
+  font-size: 5rem;
+}
+
+.vanta-content p {
+  font-size: 3rem;
+}
+
+.vanta-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.vanta-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  /* backdrop-filter: blur(0.5px);  */
+  background-color: #00000079; /* Color del fondo difuminado */
 }
