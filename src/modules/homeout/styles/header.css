@@ -5,10 +5,60 @@
   background-color: rgb(0, 0, 0);
   align-items: center;
   color: #ffffff;
+  font-size: 1.6rem;
 }
 
 .header__logo,
 .header__menu,
 .header__redes {
   display: flex;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__redes a {
+  position: relative;
+  display: inline-block;
+}
+
+.header__redes a.linkedin:hover::before {
+  content: "Encuéntrame en LinkedIn";
+  position: absolute;
+  background-color: rgba(0, 119, 181, 0.9);
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.header__redes a.gmail:hover::before {
+  content: "Envíame un mail";
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.9);
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.header__redes a.linkedin:hover::before,
+.header__redes a.gmail:hover::before {
+  opacity: 1;
 }

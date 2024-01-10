@@ -43,8 +43,13 @@ a {
   text-decoration: none;
 }
 
+.all__space {
+  padding: 0 0.5rem;
+}
+
 /* Custom svg's */
-.custom__svg__linkedin {
+.custom__svg__linkedin,
+.custom__svg__icon {
   max-width: 3rem;
 }
 .custom__svg__gmail {

@@ -1,5 +1,5 @@
 import React from "react";
-import { SvgGmail, SvgLinkedin } from "../../helpers/Icons";
+import { SvgGmail, SvgLinkedin, SvgTitle } from "../../helpers/Icons";
 import "../styles/header.css";
 
 const Header = () => {
@@ -12,25 +12,30 @@ const Header = () => {
       <div className="container">
         <div className="header">
           <div className="header__logo">
-            <img src="" alt="icono" />
+            <SvgTitle />
+            <div className="all__space" />
             <p>Patricia Carreño Esparza</p>
           </div>
           <div className="header__menu">
-            <a href="#">
+            <a>
               <p>Patricia Carreño Esparza</p>
             </a>
-            <a href="#">
+            <div className="all__space" />
+            <a>
               <p>Patricia Carreño Esparza</p>
             </a>
-            <a href="#">
+            <div className="all__space" />
+            <a>
               <p>Patricia Carreño Esparza</p>
             </a>
           </div>
+
           <div className="header__redes">
-            <a href="#">
+            <a href="*" target="_blank" rel="noreferrer" className="linkedin">
               <SvgLinkedin />
             </a>
-            <a href="#">
+            <div className="all__space" />
+            <a href="*" target="_blank" rel="noreferrer" className="gmail">
               <SvgGmail />
             </a>
           </div>
