@@ -1,5 +1,5 @@
 import React from "react";
-import { SvgGmail, SvgLinkedin } from "../../helpers/icons";
+import { SvgGmail, SvgLinkedin } from "../../helpers/Icons";
 import "../styles/header.css";
 
 const Header = () => {
